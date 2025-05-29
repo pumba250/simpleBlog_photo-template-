@@ -139,8 +139,7 @@
 
 <!-- Подвал -->
 <footer class="w3-container w3-padding-32 w3-light-grey w3-center w3-margin-top">
-    <p>&copy; <?= date('Y') ?> Фотоблог. Все права защищены.</p>
-    <p>Версия 1.0</p>
+    <p>&copy; <?= date("Y") ?> <?= htmlspecialchars($_SERVER['SERVER_NAME']) ?>. Powered by <?= $powered ?>_<?= $version ?>. Все права защищены.</p>
 </footer>
 
 <script>
