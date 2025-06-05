@@ -8,13 +8,13 @@
             <?php if ($user): ?>
                 <div class="w3-padding-16">
                     <span class="w3-right">
-                        <form method="post" action="/admin/do_logout.php">
+                        <form method="post" action="/admin.php?logout">
                             <button type="submit" class="w3-button w3-light-grey">Выйти</button>
                         </form>
                     </span>
                     <h4>Привет, <?= htmlspecialchars($user['username']) ?>!</h4>
                     <?php if ($user['isadmin'] == '9'): ?>
-                        <p><a href="/admin/" class="w3-button w3-light-grey">Панель управления</a></p>
+                        <p><a href="/admin.php" class="w3-button w3-light-grey">Панель управления</a></p>
                     <?php endif; ?>
                 </div>
             <?php else: ?>
