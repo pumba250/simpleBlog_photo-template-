@@ -13,7 +13,7 @@
                         </form>
                     </span>
                     <h4>Привет, <?= htmlspecialchars($user['username']) ?>!</h4>
-                    <?php if ($user['isadmin'] == '9'): ?>
+                    <?php if ($user['isadmin'] >= '7'): ?>
                         <p><a href="/admin.php" class="w3-button w3-light-grey">Панель управления</a></p>
                     <?php endif; ?>
                 </div>
